@@ -1,0 +1,11 @@
+file_format: "1"
+id: grapto_v3w
+name: grapto_v3w
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+url: https://nicekeyboards.com/nice-60

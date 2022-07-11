@@ -1,0 +1,6 @@
+# Copyright (c) 2022 Herman Lundkvist
+# SPDX-License-Identifier: MIT
+
+config BOARD_GRAPTO_V3W
+	bool "grapto_v3w"
+	depends on SOC_NRF52833_QIAA
