@@ -114,7 +114,7 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)
 		 * Storage partition will be used by FCB/LittleFS/NVS
 		 * if enabled.
 		 */
-		storage_partition: partition@d4000 {
+		storage_partition: partition@60000 {
 			label = "storage";
 			reg = <0x00060000 0x00020000>;
 		};
