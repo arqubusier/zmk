@@ -107,7 +107,16 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)
 
 		code_partition: partition@0 {
 			label = "code_partition";
-			reg = <0x00000000 0x80000>;
+			reg = <0x00000000 0x60000>;
+		};
+
+		/*
+		 * Storage partition will be used by FCB/LittleFS/NVS
+		 * if enabled.
+		 */
+		storage_partition: partition@d4000 {
+			label = "storage";
+			reg = <0x00060000 0x00020000>;
 		};
 	};
 };
