@@ -22,16 +22,4 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-#config MAIN_STACK_SIZE
-#    int
-#    default 4096
-#
-#config SYSTEM_WORKQUEUE_STACK_SIZE
-#    int
-#    default 4096
-#
-#config ISR_STACK_SIZE
-#    int
-#    default 4096
-
 endif # BOARD_GRAPTO_V3W
