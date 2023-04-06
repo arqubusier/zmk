@@ -1,4 +1,4 @@
-# Copyright (c) 2022 Herman Lundkvist
+# Copyright (c) 2023 Herman Lundkvist
 # SPDX-License-Identifier: MIT
 
 config BOARD_ENABLE_DCDC

@@ -1,17 +1,24 @@
 # Copyright (c) 2022 Herman Lundkvist
 # SPDX-License-Identifier: MIT
 
-if BOARD_GRAPTO_V3W
+if BOARD_GRAPTO_V3W_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "grapto_v3w"
+	default "Grapto v3w"
 
-if USB_DEVICE_STACK
-
-config USB_NRFX
+config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
-endif # USB_DEVICE_STACK
+endif # BOARD_GRAPTO_V3W_LEFT
+
+
+if BOARD_GRAPTO_V3W_LEFT || BOARD_GRAPTO_V3W_RIGHT 
+
+config BOARD
+	default "grapto_v3w"
+
+config ZMK_SPLIT
+	default y
 
 config BT_CTLR
 	default BT
@@ -22,4 +29,14 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-endif # BOARD_GRAPTO_V3W
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+endif # BOARD_GRAPTO_V3W_LEFT || BOARD_GRAPTO_V3W_RIGHT
